@@ -2,10 +2,10 @@
 
 function Conectar()
 {
-    $server = "sql204.epizy.com";
-    $bd = "epiz_28517983_escuela";
-    $user = "epiz_28517983";
-    $pass = "AnSLbfHlP28FG";
+    $server = "localhost";
+    $bd = "escuela";
+    $user = "root";
+    $pass = "";
 
     $conexion = new mysqli($server, $user, $pass, $bd);
 

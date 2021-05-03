@@ -20,7 +20,8 @@ function store($name, $lastname, $conexion)
 {
     $consulta = "insert into users (name, lastname) values ('$name','$lastname')";
     $resultado = mysqli_query($conexion, $consulta);
-    header('Location: http://apptec3.infinityfreeapp.com/'); 
+   // header('Location: http://apptec3.infinityfreeapp.com/'); 
+      header('location:http://localhost/crudphp/');
 }
 
 function edit($id)
