@@ -42,7 +42,14 @@ $users = index();
                                         <td><?php echo $user['name']; ?> </td>
                                         <td><?php echo $user['lastname']; ?> </td>
                                         <td width="10px"><a href="edituser.php?user=<?php echo $user['id'];?>" class="btn btn-success btn-sm">Editar</a></td>
-                                        <td width="10px"><a href="" class="btn btn-danger btn-sm">Eliminar</a></td>
+                                        <td width="10px">
+                                        <form action="UserController.php" method="post">
+                                        <input type="hidden" name="_method" value="delete">
+                                        <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
+                                        <input type="submit" class="btn btn-danger btn-sm" value="Eliminar">
+                                        </form>
+                                       
+                                        </a></td>
                                 </tr>
                                 <?php } // cierro el foreach?>
                             </tbody>
