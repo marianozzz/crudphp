@@ -1,17 +1,13 @@
 <?php
 include ('UserController.php');
-include ('User.php');
 $users = index();
 
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   
     <?php include ('partials/head.php'); ?>
-
     <title>CRUD con PHP y Bootstrap CSS</title>
-
 </head>
 <body>
 <main class="flex-shrink-0">
@@ -66,9 +62,17 @@ $users = index();
                 </div>
             </div>
         </div>
-
-
-
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mt-4 mb-4">
+                    <div class="card-body">
+                        <p>Para descargar el codigo de este ejemplo podes hacerlo desde github:</p>
+                        <p><i class="fab fa-github"> <a href="https://github.com/marianozzz/crudphp "> Codigo </a></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 </main>
 <?php include('partials/footer.php'); ?>
