@@ -1,3 +1,14 @@
+<?php
+include('UserController.php');
+
+$id = $_GET['user'];
+
+$user = edit($id);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +28,8 @@
                         <h5>Editar Usuario</h5>
                     </div>
                     <div class="card-body">
-                        <form action="UserController.php" method="post">
-
+                        <form action="UserController.php" method="post" if-match="*">
+                          <input type="hidden" name="_method" value="PUT">
                           <?php include ('partials/form.php'); ?>
 
                             <input type="submit" value="Actualizar" class="btn btn-primary btn-sm mt-2">

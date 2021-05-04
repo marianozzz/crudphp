@@ -15,10 +15,17 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <form action="UserController.php" method="post">
+                        <input type="hidden" name="_method" value="insert">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="Ingrese un nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Apellido</label>
+                            <input type="text" name="apellido"  class="form-control" placeholder="Ingrese apellido" required>
+                        </div>
 
-                          <?php include ('partials/form.php'); ?>
-
-                            <input type="submit" value="Agregar usuario" class="btn btn-primary btn-sm mt-2">
+                        <input type="submit" value="Agregar usuario" class="btn btn-primary btn-sm mt-2">
                         </form>
                     </div>
                 </div>

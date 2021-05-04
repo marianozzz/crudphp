@@ -1,6 +1,6 @@
 <?php
 include ('UserController.php');
-
+include ('User.php');
 $users = index();
 
 ?>
@@ -23,7 +23,7 @@ $users = index();
             <div class="col-md-6">
                 <div class="card mt-4">
                     <div class="card-header">
-                        <a href="adduser.php" class="btn btn-secondary">Agregar nuevo usuario</a>
+                        <a href="adduser.php" class="btn btn-secondary">Nuevo usuario</a>
                     </div>
                     <div class="card-body">
                         <table class="table table-striped">
@@ -41,7 +41,7 @@ $users = index();
                                         <td><?php echo $user['id']; ?> </td>
                                         <td><?php echo $user['name']; ?> </td>
                                         <td><?php echo $user['lastname']; ?> </td>
-                                        <td width="10px"><a href="edituser.php" class="btn btn-success btn-sm">Editar</a></td>
+                                        <td width="10px"><a href="edituser.php?user=<?php echo $user['id'];?>" class="btn btn-success btn-sm">Editar</a></td>
                                         <td width="10px"><a href="" class="btn btn-danger btn-sm">Eliminar</a></td>
                                 </tr>
                                 <?php } // cierro el foreach?>

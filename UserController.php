@@ -1,10 +1,17 @@
 <?php
 include ('conexion.php');
 
-if(!empty($_POST))
+if(!empty($_POST['_insert'] && $_POST['_method'] == 'insert'))
 {
     $conexion =Conectar();
     store($_POST["nombre"],$_POST["apellido"],$conexion);
+}
+if(!empty($_POST['_method'] && $_POST['_method'] == 'PUT'))
+{
+    $name = $_POST['nombre'];
+    $lastname = $_POST['apellido'];
+    $id = $_POST['id'];
+    update($id, $name, $lastname);
 }
 
 function index()
@@ -26,17 +33,28 @@ function store($name, $lastname, $conexion)
 
 function edit($id)
 {
-    //code...
+   $conexion =Conectar();
+   $consulta = "select *from users where id = $id";
+   $resultado = mysqli_query($conexion, $consulta);
+   
+   return $resultado;
+    
 }
 
-function update($id)
+function update($id, $name, $lastname)
 {
-    // code..
+    $conexion =Conectar();
+    $consulta ="update users set name = '$name', lastname = '$lastname' where id = $id";
+    //echo $consulta;
+    
+    $resultado = mysqli_query($conexion, $consulta);
 }
 
 function destroy($id)
 {
-    //code..
+    $conexion =Conectar();
+    $consulta = "delete *from users where i = $id";
+    $resultado = mysqli_query($conexion, $consulta);
 }
 
 ?>
