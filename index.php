@@ -5,21 +5,18 @@ $users = index();
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+   
+    <?php include ('partials/head.php'); ?>
 
-    <title>Tablas con Bootstrap</title>
+    <title>CRUD con PHP y Bootstrap CSS</title>
 </head>
 <body>
     <div class="container">
-        
+         <p class="h2 mt-2">CRUD en PHP</p>
+         <hr>
         <div class="row">
-            
             <div class="col-md-6">
                 <div class="card mt-4">
                     <div class="card-header">
@@ -57,6 +54,14 @@ $users = index();
                     </div>
                 </div>
             
+            </div>
+            <div class="col-md-6 ">
+                <div class="card mt-4">
+                    <div class="card-body">
+                    <p> Un CRUD (Create, Read, Update, Delete) es un acrónimo para las maneras en las que se puede operar sobre información almacenada. Es un nemónico para las cuatro funciones del almacenamiento persistente.</p>
+                    <p> Este es un ejemplo sencillo realizado en PHP, utilizando Bootstrap CSS.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

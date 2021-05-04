@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <?php include ('partials/head.php'); ?>
     <title>Agregar Nuevo Usuario</title>
 </head>
 <body>
     <div class="container">
+    <p class="h2 mt-2">CRUD en PHP - Alta de usuario</p>
+         <hr>
         <div class="row">
             <div class="col-md-6">
                 <div class="card mt-4">
@@ -27,6 +25,14 @@
 
                         <input type="submit" value="Agregar usuario" class="btn btn-primary btn-sm mt-2">
                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="card mt-4">
+                    <div class="card-body">
+                    <p> Esta es la opcion de alta en este form ingresamos un nuevo usuario, la peticion sera procesada por el controlador de usuario.</p>
+                    <p> Si la operacion fue exitosa retornara al index con el usuario nuevo en la lista.</p>
                     </div>
                 </div>
             </div>

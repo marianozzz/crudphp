@@ -50,10 +50,9 @@ function edit($id)
 function update($id, $name, $lastname)
 {
     $conexion =Conectar();
-    $consulta ="update users set name = '$name', lastname = '$lastname' where id = $id";
-    //echo $consulta;
-    
+    $consulta ="update users set name = '$name', lastname = '$lastname' where id = $id";   
     $resultado = mysqli_query($conexion, $consulta);
+    header('Location: http://apptec3.infinityfreeapp.com/'); 
 }
 
 function destroy($id,$conexion)
