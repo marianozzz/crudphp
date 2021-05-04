@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .footer {
+    background-image: url("https://i.stack.imgur.com/AZ2Xw.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 20px;
+  }

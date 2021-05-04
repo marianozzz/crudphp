@@ -11,8 +11,10 @@ $users = index();
     <?php include ('partials/head.php'); ?>
 
     <title>CRUD con PHP y Bootstrap CSS</title>
+
 </head>
 <body>
+<main class="flex-shrink-0">
     <div class="container">
          <p class="h2 mt-2">CRUD en PHP</p>
          <hr>
@@ -64,6 +66,11 @@ $users = index();
                 </div>
             </div>
         </div>
-    </div>
+
+
+
+</div>
+</main>
+<?php include('partials/footer.php'); ?>
 </body>
 </html>
