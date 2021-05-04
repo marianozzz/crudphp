@@ -18,8 +18,9 @@ $user = edit($id);
 <body>
     <div class="container">
     <p class="h2 mt-2">CRUD en PHP - Modificar usuario</p>
-         <hr>
-        <div class="row">
+    <a href="index.php" class="btn btn-info btn-sm">Inicio</a>
+    <hr>
+        <div class="row mb-4">
             <div class="col-md-6">
                 <div class="card mt-4">
                     <div class="card-header">
