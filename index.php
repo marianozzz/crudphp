@@ -68,7 +68,7 @@ $users = index();
                 <div class="card mt-4 mb-4">
                     <div class="card-body">
                         <p>Para descargar el codigo de este ejemplo podes hacerlo desde github:</p>
-                        <p><i class="fab fa-github"> <a href="https://github.com/marianozzz/crudphp "> Codigo </a></i></p>
+                        <p><i class="fab fa-github"> <a href="https://github.com/marianozzz/crudphp" target="_blank"> Codigo </a></i></p>
                     </div>
                 </div>
             </div>

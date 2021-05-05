@@ -5,12 +5,10 @@ $id = $_GET['user'];
 
 $user = edit($id);
 
-
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <?php include ('partials/head.php'); ?>
     <title>Editar Usuario</title>
