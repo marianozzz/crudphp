@@ -11,7 +11,7 @@ foreach($user as $item){
 </div>
 <div class="form-group">
     <label for="lastname">Apellido</label>
-    <input type="text" name="apellido"  value="<?php echo $item['lastname'];?>" class="form-control" placeholder="Ingrese apellido" required>
+    <input type="text" name="apellido" value="<?php echo $item['lastname'];?>" class="form-control" placeholder="Ingrese apellido" required>
 </div>
 
 <?php 
