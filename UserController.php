@@ -20,6 +20,13 @@ if(!empty($_POST['_method'] && $_POST['_method'] == 'delete'))
     destroy($id, $conexion);
 }
 
+if(!empty($_POST['_method'] && $_POST['_method'] == 'reset'))
+{
+   
+    resetbd();
+}
+
+
 function index()
 {
     $conexion =Conectar();
@@ -62,6 +69,15 @@ function destroy($id,$conexion)
     $resultado = mysqli_query($conexion, $consulta);
      header('Location: http://apptec3.infinityfreeapp.com/'); 
    // header('location:http://localhost/crudphp/');
+}
+
+
+function resetbd()
+{
+    $conexion =Conectar();
+    $consulta = "TRUNCATE TABLE users";
+    mysqli_query($conexion, $consulta);
+    header('Location: http://apptec3.infinityfreeapp.com/'); 
 }
 
 ?>

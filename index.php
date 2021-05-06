@@ -13,6 +13,9 @@ $users = index();
 <main class="flex-shrink-0">
     <div class="container">
          <p class="h2 mt-2">CRUD en PHP</p>
+         <form action="UserController.php" method="POST">
+         <input type="hidden" name="_method" value="reset" id="">
+         <input type="submit" value="Resetear BD" class="btn btn-success btn-sm">
          <hr>
         <div class="row">
             <div class="col-md-6">
