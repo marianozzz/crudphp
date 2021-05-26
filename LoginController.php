@@ -8,7 +8,7 @@ $pass = md5($_POST['password']);
 /*Creo las variables de session */
 
 $_SESSION['email'] = $email;
-$_SESSION['name']  = "PAKO";
+$_SESSION['name']  = "Guest";
 
 
 header('Location:/crudphp/home.php'); 
