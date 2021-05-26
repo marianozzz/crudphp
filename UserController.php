@@ -1,29 +1,34 @@
 <?php
 include ('conexion.php');
 
-if(!empty($_POST['_method'] && $_POST['_method'] == 'insert'))
+if($_POST)
 {
-    $conexion =Conectar();
-    store($_POST["nombre"],$_POST["apellido"],$conexion);
-}
-if(!empty($_POST['_method'] && $_POST['_method'] == 'PUT'))
-{
-    $name = $_POST['nombre'];
-    $lastname = $_POST['apellido'];
-    $id = $_POST['id'];
-    update($id, $name, $lastname);
-}
-if(!empty($_POST['_method'] && $_POST['_method'] == 'delete'))
-{
-    $conexion = Conectar();
-    $id = $_POST['id'];
-    destroy($id, $conexion);
-}
 
-if(!empty($_POST['_method'] && $_POST['_method'] == 'reset'))
-{
-   
-    resetbd();
+    if(!empty($_POST['_method'] && $_POST['_method'] == 'insert'))
+    {
+        $conexion =Conectar();
+        store($_POST["nombre"],$_POST["apellido"],$conexion);
+    }
+    if(!empty($_POST['_method'] && $_POST['_method'] == 'PUT'))
+    {
+        $name = $_POST['nombre'];
+        $lastname = $_POST['apellido'];
+        $id = $_POST['id'];
+        update($id, $name, $lastname);
+    }
+    if(!empty($_POST['_method'] && $_POST['_method'] == 'delete'))
+    {
+        $conexion = Conectar();
+        $id = $_POST['id'];
+        destroy($id, $conexion);
+    }
+
+    if(!empty($_POST['_method'] && $_POST['_method'] == 'reset'))
+    {
+    
+        resetbd();
+    }
+
 }
 
 
