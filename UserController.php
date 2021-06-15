@@ -1,6 +1,5 @@
 <?php
 include ('conexion.php');
-<<<<<<< HEAD
 if($_POST)
 {
     if(!empty($_POST['_method'] && $_POST['_method'] == 'insert'))
@@ -16,23 +15,6 @@ if($_POST)
         $lastname = $_POST['apellido'];
         $id = $_POST['id'];
         update($id, $name, $lastname, $conexion);
-=======
-
-if($_POST)
-{
-
-    if(!empty($_POST['_method'] && $_POST['_method'] == 'insert'))
-    {
-        $conexion =Conectar();
-        store($_POST["nombre"],$_POST["apellido"],$conexion);
-    }
-    if(!empty($_POST['_method'] && $_POST['_method'] == 'PUT'))
-    {
-        $name = $_POST['nombre'];
-        $lastname = $_POST['apellido'];
-        $id = $_POST['id'];
-        update($id, $name, $lastname);
->>>>>>> 36439649fc3af72864707245382de318f4f93985
     }
     if(!empty($_POST['_method'] && $_POST['_method'] == 'delete'))
     {
@@ -40,17 +22,6 @@ if($_POST)
         $id = $_POST['id'];
         destroy($id, $conexion);
     }
-<<<<<<< HEAD
-=======
-
-    if(!empty($_POST['_method'] && $_POST['_method'] == 'reset'))
-    {
-    
-        resetbd();
-    }
-
-}
->>>>>>> 36439649fc3af72864707245382de318f4f93985
 
     if(!empty($_POST['_method'] && $_POST['_method'] == 'reset'))
     {
