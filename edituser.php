@@ -2,6 +2,7 @@
 include('UserController.php');
 
 $id = $_GET['user'];
+      //$_REQUEST
 
 $user = edit($id);
 
@@ -27,6 +28,7 @@ $user = edit($id);
                     <div class="card-body">
                         <form action="UserController.php" method="post" if-match="*">
                           <input type="hidden" name="_method" value="PUT">
+
                           <?php include ('partials/form.php'); ?>
 
                             <input type="submit" value="Actualizar" class="btn btn-primary btn-sm mt-2">
