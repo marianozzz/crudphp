@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 /**Iniciar que voy a utilizar variables de session */
 session_start();
 
@@ -29,5 +30,20 @@ else
 {
     header('location:login.php');
 }
+=======
+session_start();
+
+$email = $_POST['email'];
+$pass = md5($_POST['password']);
+
+
+/*Creo las variables de session */
+
+$_SESSION['email'] = $email;
+$_SESSION['name']  = "Guest";
+
+
+header('Location:/crudphp/home.php'); 
+>>>>>>> 36439649fc3af72864707245382de318f4f93985
 
 ?>
