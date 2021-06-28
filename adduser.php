@@ -11,7 +11,7 @@
     <hr>
         <div class="row">
             <div class="col-md-6">
-                <div class="card mt-4">
+                <div class="card mt-4 mb-4">
                     <div class="card-body">
                         <form action="UserController.php" method="post">
                         <input type="hidden" name="_method" value="insert">
@@ -22,6 +22,14 @@
                         <div class="form-group">
                             <label for="lastname">Apellido</label>
                             <input type="text" name="apellido"  class="form-control" placeholder="Ingrese apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email"  class="form-control" placeholder="Ingrese un correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password"  class="form-control" placeholder="Ingrese contraseña" required>
                         </div>
 
                         <input type="submit" value="Agregar usuario" class="btn btn-primary btn-sm mt-2">

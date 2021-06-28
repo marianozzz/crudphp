@@ -10,6 +10,8 @@ $users = index();
     <title>CRUD con PHP y Bootstrap CSS</title>
 </head>
 <body>
+<?php include ('partials/navbar.php'); ?>
+
 <main class="flex-shrink-0">
     <div class="container">
          <p class="h2 mt-2">CRUD en PHP</p>
@@ -68,7 +70,7 @@ $users = index();
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="card mt-4 mb-4">
                     <div class="card-body">
                         <p>Para descargar el codigo de este ejemplo podes hacerlo desde github:</p>
@@ -79,6 +81,19 @@ $users = index();
                         <a href='https://cafecito.app/zcode' rel='noopener' target='_blank'>
                         <img srcset='https://cdn.cafecito.app/imgs/buttons/button_2.png 1x, https://cdn.cafecito.app/imgs/buttons/button_2_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_2_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_2.png' alt='Invitame un café en cafecito.app' />
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mt-4 mb-4">
+                    <div class="card-body">
+                    
+                                <!--Start rollercoin.com code-->
+                                <a href="https://rollercoin.com/?r=kqacq9wd">
+                                <img src="images/w300h250.gif" alt="300h250"/>
+                                </a>
+                                <!--End rollercoin.com code-->
+                            
                     </div>
                 </div>
             </div>

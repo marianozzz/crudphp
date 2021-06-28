@@ -1,7 +1,3 @@
-<?php
-session_start();
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +6,7 @@ session_start();
 <title>Dashboard</title>
 </head>
 <body>
+<?php include ('partials/navbar.php'); ?>
     <div class="container">
         <div class="row">
             <div class="card mt-4">

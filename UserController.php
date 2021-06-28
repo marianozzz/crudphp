@@ -5,7 +5,7 @@ if($_POST)
     if(!empty($_POST['_method'] && $_POST['_method'] == 'insert'))
     {
         $conexion =Conectar();
-        store($_POST["nombre"],$_POST["apellido"],$conexion);
+        store($_POST["nombre"],$_POST["apellido"],$conexion, $_POST['email'],md5($_POST['password']));
     }
 
     if(!empty($_POST['_method'] && $_POST['_method'] == 'PUT'))
@@ -38,9 +38,9 @@ function index()
     return $resultado;
 }
 
-function store($name, $lastname, $conexion)
+function store($name, $lastname, $conexion, $email, $password)
 {
-    $consulta = "insert into users (name, lastname) values ('$name','$lastname')";
+    $consulta = "insert into users (name, lastname, email, password) values ('$name','$lastname','$email','$password')";
     $resultado = mysqli_query($conexion, $consulta);
     //header('Location: http://apptec3.infinityfreeapp.com/'); 
       header('location:http://localhost/crudphp/');
