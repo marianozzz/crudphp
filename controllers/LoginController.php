@@ -1,6 +1,6 @@
 <?php
 /** Incluimos la conexion a base de datos */
-include ('conexion.php');
+include ('../conexion.php');
 
 /**Llamamos a la funcion conectar y el resultado lo guardamos en la variable $conexion */
 $conexion= Conectar();
@@ -42,7 +42,7 @@ if(isset($_POST))
                 $_SESSION['user'] = $data['name'];
                 $_SESSION['email'] = $data['email'];
                 /*redireccionamos al dash del usuario */
-                header('location:dashboard.php');
+                header('location:../dashboard.php');
             }
             else
             {

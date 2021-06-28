@@ -15,7 +15,7 @@
                          <h4>Iniciar Sesion</h4>
                     </div>
                     <div class="card-body">
-                        <form action="LoginController.php" method="post">
+                        <form action="controllers/LoginController.php" method="post">
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" name="email" class="form-control" required placeholder="Corre electronico">
