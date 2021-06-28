@@ -62,7 +62,8 @@ function update($id, $name, $lastname, $conexion)
    
     $consulta ="update users set name = '$name', lastname = '$lastname' where id = $id";   
     $resultado = mysqli_query($conexion, $consulta);
-    header('Location: http://apptec3.infinityfreeapp.com/'); 
+  //  header('Location: http://apptec3.infinityfreeapp.com/'); 
+  header('location:http://localhost/crudphp/');
 }
 
 function destroy($id,$conexion)
@@ -70,8 +71,8 @@ function destroy($id,$conexion)
     
     $consulta = "delete from users where id = $id";
     $resultado = mysqli_query($conexion, $consulta);
-     header('Location: http://apptec3.infinityfreeapp.com/'); 
-   // header('location:http://localhost/crudphp/');
+  //   header('Location: http://apptec3.infinityfreeapp.com/'); 
+    header('location:http://localhost/crudphp/');
 }
 
 function resetbd()
@@ -79,7 +80,8 @@ function resetbd()
     $conexion =Conectar();
     $consulta = "TRUNCATE TABLE users";
     mysqli_query($conexion, $consulta);
-    header('Location: http://apptec3.infinityfreeapp.com/'); 
+   // header('Location: http://apptec3.infinityfreeapp.com/'); 
+   header('location:http://localhost/crudphp/');
 }
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 /** Incluimos la conexion a base de datos */
-include ('../conexion.php');
+include ('conexion.php');
 
 /**Llamamos a la funcion conectar y el resultado lo guardamos en la variable $conexion */
 $conexion= Conectar();
@@ -47,19 +47,19 @@ if(isset($_POST))
             else
             {
                 /*si falla el login redireccion a la pagina de login */
-                header('location:login.php');
+                header('location:../login.php');
             } 
 
         }
         else
         {
-            header('location:login.php');
+            header('location:../login.php');
         } 
 
     }
 else
     {
-        header('location:login.php');
+        header('location:../login.php');
     }
 
 ?>

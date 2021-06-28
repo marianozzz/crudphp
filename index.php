@@ -1,5 +1,5 @@
 <?php
-include ('UserController.php');
+include ('controllers/UserController.php');
 $users = index();
 
 ?>
@@ -15,7 +15,7 @@ $users = index();
 <main class="flex-shrink-0">
     <div class="container">
          <p class="h2 mt-2">CRUD en PHP</p>
-         <form action="UserController.php" method="POST">
+         <form action="controllers/UserController.php" method="POST">
          <input type="hidden" name="_method" value="reset" id="">
          <input type="submit" value="Resetear BD" class="btn btn-success btn-sm">
          <hr>
